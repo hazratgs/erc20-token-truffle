@@ -1,6 +1,6 @@
-const EAT = artifacts.require("./EAT.sol");
+var Migrations = artifacts.require("Migrations");
 
 module.exports = function(deployer) {
-  const tokenAmount = 1400000;
-  deployer.deploy(EAT, tokenAmount);
+  // Deploy the Migrations contract as our only task
+  deployer.deploy(Migrations);
 };
